@@ -1,12 +1,20 @@
 
+import Navbar from "./components/Navbar"
+
 function App() {
   return (
-    <main className="relative isolate flex min-h-screen w-full items-center justify-center overflow-x-hidden bg-[#080B18] px-4 py-16 text-white">
+    <main
+      id="inicio"
+      className="relative isolate flex min-h-screen w-full items-center justify-center overflow-x-hidden bg-[#080B18] px-4 py-16 text-white"
+    >
 
       {/* Brilhos cósmicos de fundo */}
       <div className="pointer-events-none absolute -left-40 -top-40 -z-10 h-[500px] w-[500px] rounded-full bg-violet-700/20 blur-[120px]" />
 
       <div className="pointer-events-none absolute -right-40 bottom-0 -z-10 h-[500px] w-[500px] rounded-full bg-cyan-500/15 blur-[120px]" />
+
+      {/* Barra de navegação */}
+      <Navbar />
 
       {/* Apresentação principal */}
       <section className="relative z-10 mx-auto w-full min-w-0 max-w-none text-center [container-type:inline-size]">
