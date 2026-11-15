@@ -35,8 +35,9 @@ const projetos: Projeto[] = [
     titulo: "Lumi Links",
     categoria: "Cloud • DevOps • Desenvolvimento",
     descricao:
-      "Encurtador de links desenvolvido em equipe durante um hackathon. O projeto combina uma experiência visual criativa com Kubernetes, automação de entregas, GitOps e observabilidade.",
+      "Encurtador de links desenvolvido em equipe durante um hackathon. O projeto combina uma experiência visual criativa com frontend React, backend Java, Kubernetes, automação de entregas, GitOps e observabilidade.",
     tecnologias: [
+      "React",
       "Java",
       "Spring Boot",
       "Kubernetes",
@@ -46,21 +47,26 @@ const projetos: Projeto[] = [
     ],
     destaque: "from-cyan-600/20 via-violet-600/15 to-fuchsia-500/20",
     imagem: lumiLinksImg,
+    repositorio:
+      "https://github.com/MeloJu/portal-app",
   },
   {
-    titulo: "EduConnect",
-    categoria: "Java • Orientação a Objetos",
+    titulo: "Automação de Relatório de Vendas",
+    categoria: "Python • Automação de Processos",
     descricao:
-      "Sistema de gestão educacional desenvolvido para aplicar conceitos de programação orientada a objetos, incluindo cadastro de alunos, professores, turmas, avaliações e autenticação.",
+      "Automação desenvolvida em Python para obter dados de vendas em planilhas Excel, calcular indicadores de faturamento e quantidade vendida e preparar o envio de relatórios por e-mail. Um projeto prático de automação de tarefas e análise de dados.",
     tecnologias: [
-      "Java",
-      "POO",
-      "Herança",
-      "Polimorfismo",
-      "Encapsulamento",
+      "Python",
+      "Pandas",
+      "PyAutoGUI",
+      "OpenPyXL",
+      "Pyperclip",
+      "Jupyter Notebook",
     ],
-    destaque: "from-indigo-600/30 via-violet-600/10 to-blue-500/20",
-    simbolo: "🎓",
+    destaque: "from-indigo-600/30 via-violet-600/10 to-cyan-500/20",
+    simbolo: "📊",
+    repositorio:
+      "https://github.com/gracecraftdev/automacao-relatorio-vendas-python",
   },
 ]
 
@@ -72,6 +78,7 @@ function Projetos() {
     >
       {/* Brilhos cósmicos */}
       <div className="pointer-events-none absolute -left-40 top-0 -z-10 h-[450px] w-[450px] rounded-full bg-violet-600/10 blur-[120px]" />
+
       <div className="pointer-events-none absolute -right-40 bottom-0 -z-10 h-[450px] w-[450px] rounded-full bg-cyan-500/10 blur-[120px]" />
 
       <div className="mx-auto max-w-6xl">
