@@ -5,7 +5,8 @@ const links = [
   { nome: "Início", destino: "#inicio" },
   { nome: "Sobre", destino: "#sobre" },
   { nome: "Projetos", destino: "#projetos" },
-  { nome: "Experiência", destino: "#experiencia" },
+  { nome: "Experiências", destino: "#experiencias" },
+  { nome: "Habilidades", destino: "#habilidades" },
   { nome: "Contato", destino: "#contato" },
 ]
 
@@ -14,7 +15,7 @@ function Navbar() {
 
   return (
     <header
-      className="notranslate absolute inset-x-0 top-0 z-50 border-b border-white/10 bg-[#080B18]/70 backdrop-blur-xl"
+      className="notranslate fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#080B18]/85 shadow-[0_8px_30px_rgba(0,0,0,0.15)] backdrop-blur-xl"
       translate="no"
     >
       <nav
@@ -24,6 +25,7 @@ function Navbar() {
         {/* Logo */}
         <a
           href="#inicio"
+          onClick={() => setMenuAberto(false)}
           className="flex shrink-0 items-center gap-2 text-lg font-bold tracking-tight"
         >
           <span className="text-xl text-violet-400">✦</span>
