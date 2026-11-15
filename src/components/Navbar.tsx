@@ -5,7 +5,8 @@ const links = [
   { nome: "Início", destino: "#inicio" },
   { nome: "Sobre", destino: "#sobre" },
   { nome: "Projetos", destino: "#projetos" },
-  { nome: "Experiência", destino: "#experiencia" },
+  { nome: "Experiências", destino: "#experiencias" },
+  { nome: "Habilidades", destino: "#habilidades" },
   { nome: "Contato", destino: "#contato" },
 ]
 
