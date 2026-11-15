@@ -1,6 +1,7 @@
 
 import Navbar from "./components/Navbar"
 import SobreMim from "./components/SobreMim"
+import Projetos from "./components/Projetos"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         id="inicio"
         className="relative isolate flex min-h-screen w-full items-center justify-center overflow-x-hidden bg-[#080B18] px-4 py-16 text-white"
       >
+
         {/* Brilhos cósmicos de fundo */}
         <div className="pointer-events-none absolute -left-40 -top-40 -z-10 h-[500px] w-[500px] rounded-full bg-violet-700/20 blur-[120px]" />
 
@@ -19,6 +21,7 @@ function App() {
 
         {/* Apresentação principal */}
         <section className="relative z-10 mx-auto w-full min-w-0 max-w-none text-center [container-type:inline-size]">
+
           {/* Mensagem de boas-vindas */}
           <span className="mb-6 inline-block rounded-full border border-violet-400/30 bg-violet-500/10 px-5 py-2 text-sm text-violet-200">
             ✦ Bem-vindo ao meu universo
@@ -52,6 +55,7 @@ function App() {
 
           {/* Botões */}
           <div className="flex flex-wrap justify-center gap-4">
+
             <a
               href="#projetos"
               className="rounded-full bg-violet-600 px-8 py-3 font-semibold transition duration-300 hover:bg-violet-500"
@@ -67,12 +71,16 @@ function App() {
             >
               Meu GitHub ↗
             </a>
+
           </div>
         </section>
       </main>
 
-      {/* Segunda seção */}
+      {/* Seção Sobre Mim */}
       <SobreMim />
+
+      {/* Seção Projetos */}
+      <Projetos />
     </>
   )
 }
