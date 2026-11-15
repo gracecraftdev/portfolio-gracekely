@@ -26,40 +26,36 @@ function Navbar() {
           href="#inicio"
           className="flex shrink-0 items-center gap-2 text-lg font-bold tracking-tight"
         >
-          <span className="text-xl text-violet-400">
-            ✦
-          </span>
+          <span className="text-xl text-violet-400">✦</span>
 
           <span className="bg-gradient-to-r from-violet-300 via-fuchsia-300 to-cyan-300 bg-clip-text text-transparent">
             Gracekely.dev
           </span>
         </a>
 
-        {/* Links desktop */}
-        <div className="hidden items-center gap-6 lg:flex">
+        {/* Links para desktop */}
+        <div className="hidden items-center gap-6 md:flex">
           {links.map((link) => (
             <a
               key={link.nome}
               href={link.destino}
-              className="text-sm font-medium text-slate-300 transition-colors duration-300 hover:text-violet-300"
+              className="text-sm font-medium text-slate-300 transition-colors hover:text-violet-300"
             >
               {link.nome}
             </a>
           ))}
         </div>
 
-        {/* Botão mobile */}
+        {/* Botão do menu para celular */}
         <button
           type="button"
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/15 text-violet-200 transition-colors hover:bg-white/10 lg:hidden"
-          onClick={() => setMenuAberto((aberto) => !aberto)}
+          onClick={() => setMenuAberto(!menuAberto)}
           aria-label={menuAberto ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuAberto}
           aria-controls="menu-mobile"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-violet-400/30 bg-violet-500/10 text-2xl text-violet-200 md:hidden"
         >
-          <span className="text-2xl leading-none">
-            {menuAberto ? "×" : "☰"}
-          </span>
+          {menuAberto ? "×" : "☰"}
         </button>
       </nav>
 
@@ -67,15 +63,15 @@ function Navbar() {
       {menuAberto && (
         <div
           id="menu-mobile"
-          className="border-t border-white/10 bg-[#080B18]/95 px-5 py-4 backdrop-blur-xl lg:hidden"
+          className="border-t border-white/10 bg-[#080B18]/95 px-5 py-4 md:hidden"
         >
-          <div className="mx-auto flex max-w-7xl flex-col gap-2">
+          <div className="flex flex-col gap-2">
             {links.map((link) => (
               <a
                 key={link.nome}
                 href={link.destino}
                 onClick={() => setMenuAberto(false)}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-slate-300 transition-colors hover:bg-violet-500/10 hover:text-violet-300"
+                className="rounded-lg px-3 py-2 text-sm font-medium text-slate-300 transition hover:bg-violet-500/10 hover:text-violet-300"
               >
                 {link.nome}
               </a>
