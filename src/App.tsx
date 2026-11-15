@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import SobreMim from "./components/SobreMim"
 import Projetos from "./components/Projetos"
 import Experiencias from "./components/Experiencias"
+import Habilidades from "./components/Habilidades"
 
 function App() {
   return (
@@ -46,7 +47,7 @@ function App() {
           </h2>
 
           {/* Descrição profissional */}
-          <p className="mx-auto mb-10 max-w-2xl text-base leading-8 text-slate-400 md:text-lg">
+          <p className="mx-auto mb-10 max-w-2xl text-base leading-8 text-slate-400">
             Transformo curiosidade em código e desafios em soluções.
             Estou construindo minha trajetória na tecnologia por meio
             de projetos práticos, automação e aprendizado contínuo.
@@ -81,6 +82,9 @@ function App() {
 
       {/* Seção Experiências */}
       <Experiencias />
+
+      {/* Seção Habilidades e Tecnologias */}
+      <Habilidades />
     </>
   )
 }
