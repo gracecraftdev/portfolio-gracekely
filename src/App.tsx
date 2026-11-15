@@ -22,7 +22,11 @@ function App() {
         appendTo: "head",
       }}
     >
-      <>
+      <div className="min-h-screen bg-[#080B18] scroll-smooth text-white [&_section[id]]:scroll-mt-20">
+        {/* Barra de navegação fixa */}
+        <Navbar />
+
+        {/* Apresentação principal */}
         <main
           id="inicio"
           className="relative isolate flex min-h-screen w-full items-center justify-center overflow-x-hidden bg-[#080B18] px-4 py-16 text-white"
@@ -32,10 +36,6 @@ function App() {
 
           <div className="pointer-events-none absolute -right-40 bottom-0 -z-10 h-[500px] w-[500px] rounded-full bg-cyan-500/15 blur-[120px]" />
 
-          {/* Barra de navegação */}
-          <Navbar />
-
-          {/* Apresentação principal */}
           <section className="relative z-10 mx-auto w-full min-w-0 max-w-none text-center [container-type:inline-size]">
             {/* Mensagem de boas-vindas */}
             <span className="mb-6 inline-block rounded-full border border-violet-400/30 bg-violet-500/10 px-5 py-2 text-sm text-violet-200">
@@ -103,7 +103,7 @@ function App() {
 
         {/* Seção Contato */}
         <Contato />
-      </>
+      </div>
     </GoogleReCaptchaProvider>
   )
 }
