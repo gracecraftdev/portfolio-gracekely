@@ -50,10 +50,9 @@ function App() {
               }}
             >
               Olá, eu sou{" "}
-              <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text pr-[4px] text-transparent">
                 Gracekely
               </span>
-              .
             </h1>
 
             {/* Áreas de atuação */}
