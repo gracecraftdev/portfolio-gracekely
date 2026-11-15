@@ -47,7 +47,7 @@ const experiencias: Experiencia[] = [
   },
   {
     empresa: "ICISMEP — IDDS/INTS",
-    cargo: "Assistente Administrativo II",
+    cargo: "Assistente Técnico Administrativo II",
     periodo: "Julho de 2022 — Maio de 2024",
     descricao:
       "Experiência em processos administrativos, acompanhamento de contratos, custos e atividades relacionadas a licitações.",
